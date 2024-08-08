@@ -44,17 +44,42 @@
 
 
 // 4 - Criar um recurso utilizando o REST API do jsonplaceholder
-fetch('https://jsonplaceholder.typicode.com/posts', {
-    method: 'POST',
+// fetch('https://jsonplaceholder.typicode.com/posts', {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//         // id: 12
+//         userId: 2,
+//         title: 'titulo qualquer',
+//         body: 'teste'
+//     })
+// })
+//     .then(response => response.json())
+//     .then(json => console.log(JSON.stringify(json, null, 4)))
+
+
+
+// 5 - Atualizar o post com o id 54
+/* fetch('https://jsonplaceholder.typicode.com/posts54', {
+    method: 'PUT',
     headers: {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        // id: 12
-        userId: 2,
-        title: 'titulo qualquer',
-        body: 'teste'
+        userId: 10,
+        title: 'titulo qualquer atualizado',
+        body: 'teste atualizado'
     })
+})
+    .then(response => response.json())
+    .then(json => console.log(JSON.stringify(json, null, 4))) */
+
+
+// 6 - Deletar o post com o id 35
+fetch('https://jsonplaceholder.typicode.com/posts54', {
+    method: 'DELETE',
 })
     .then(response => response.json())
     .then(json => console.log(JSON.stringify(json, null, 4)))
